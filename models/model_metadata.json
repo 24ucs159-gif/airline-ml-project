@@ -1,0 +1,433 @@
+{
+  "dataset_path": "C:\\Users\\Student\\Desktop\\maha\\Airline_customer_satisfaction.csv",
+  "dataset_analysis": {
+    "total_rows": 129880,
+    "total_cols": 22,
+    "duplicate_count": 0,
+    "missing_counts": {
+      "Arrival Delay in Minutes": 393
+    },
+    "missing_percentages": {
+      "Arrival Delay in Minutes": 0.3
+    },
+    "target_column": "satisfaction",
+    "task_type": "classification",
+    "numerical_columns": [
+      "Age",
+      "Flight Distance",
+      "Seat comfort",
+      "Departure/Arrival time convenient",
+      "Food and drink",
+      "Gate location",
+      "Inflight wifi service",
+      "Inflight entertainment",
+      "Online support",
+      "Ease of Online booking",
+      "On-board service",
+      "Leg room service",
+      "Baggage handling",
+      "Checkin service",
+      "Cleanliness",
+      "Online boarding",
+      "Departure Delay in Minutes",
+      "Arrival Delay in Minutes"
+    ],
+    "categorical_columns": [
+      "Customer Type",
+      "Type of Travel",
+      "Class"
+    ],
+    "target_distribution": {
+      "satisfied": 71087,
+      "dissatisfied": 58793
+    },
+    "target_stats": null
+  },
+  "train_rows": 103904,
+  "test_rows": 25976,
+  "metrics": {
+    "task_type": "classification",
+    "accuracy": 0.9544579611949492,
+    "precision_weighted": 0.9547366151663518,
+    "recall_weighted": 0.9544579611949492,
+    "f1_weighted": 0.9544974668174021,
+    "precision_macro": 0.9534442916536956,
+    "recall_macro": 0.9550205597692654,
+    "f1_macro": 0.9541310335344231,
+    "roc_auc": 0.992296326143445,
+    "confusion_matrix": [
+      [
+        11300,
+        459
+      ],
+      [
+        724,
+        13493
+      ]
+    ],
+    "classification_report_dict": {
+      "dissatisfied": {
+        "precision": 0.9397870924817032,
+        "recall": 0.9609660685432435,
+        "f1-score": 0.9502585880671067,
+        "support": 11759.0
+      },
+      "satisfied": {
+        "precision": 0.9671014908256881,
+        "recall": 0.9490750509952873,
+        "f1-score": 0.9580034790017395,
+        "support": 14217.0
+      },
+      "accuracy": 0.9544579611949492,
+      "macro avg": {
+        "precision": 0.9534442916536956,
+        "recall": 0.9550205597692654,
+        "f1-score": 0.9541310335344231,
+        "support": 25976.0
+      },
+      "weighted avg": {
+        "precision": 0.9547366151663518,
+        "recall": 0.9544579611949492,
+        "f1-score": 0.9544974668174021,
+        "support": 25976.0
+      }
+    },
+    "classification_report_text": "              precision    recall  f1-score   support\n\ndissatisfied       0.94      0.96      0.95     11759\n   satisfied       0.97      0.95      0.96     14217\n\n    accuracy                           0.95     25976\n   macro avg       0.95      0.96      0.95     25976\nweighted avg       0.95      0.95      0.95     25976\n",
+    "classes": [
+      "dissatisfied",
+      "satisfied"
+    ]
+  },
+  "feature_importances": [
+    {
+      "feature": "Inflight entertainment",
+      "importance": 0.22149247178697093
+    },
+    {
+      "feature": "Seat comfort",
+      "importance": 0.15208586089436132
+    },
+    {
+      "feature": "Ease of Online booking",
+      "importance": 0.0935920292585373
+    },
+    {
+      "feature": "Online support",
+      "importance": 0.0688779305965638
+    },
+    {
+      "feature": "Food and drink",
+      "importance": 0.04342975953444781
+    },
+    {
+      "feature": "Online boarding",
+      "importance": 0.03775568606694528
+    },
+    {
+      "feature": "On-board service",
+      "importance": 0.03680494922638388
+    },
+    {
+      "feature": "Leg room service",
+      "importance": 0.0356988645602273
+    },
+    {
+      "feature": "Customer Type_disloyal Customer",
+      "importance": 0.028328074401530037
+    },
+    {
+      "feature": "Customer Type_Loyal Customer",
+      "importance": 0.026815663731589615
+    },
+    {
+      "feature": "Baggage handling",
+      "importance": 0.025052378148756996
+    },
+    {
+      "feature": "Class_Business",
+      "importance": 0.024805758713558935
+    },
+    {
+      "feature": "Flight Distance",
+      "importance": 0.024474939208577354
+    },
+    {
+      "feature": "Departure/Arrival time convenient",
+      "importance": 0.024303413309416325
+    },
+    {
+      "feature": "Checkin service",
+      "importance": 0.02163793605490922
+    },
+    {
+      "feature": "Age",
+      "importance": 0.020009598157656162
+    },
+    {
+      "feature": "Cleanliness",
+      "importance": 0.019265693142207555
+    },
+    {
+      "feature": "Gate location",
+      "importance": 0.016885697528067133
+    },
+    {
+      "feature": "Type of Travel_Business travel",
+      "importance": 0.01624586388035717
+    },
+    {
+      "feature": "Inflight wifi service",
+      "importance": 0.01610437934540016
+    },
+    {
+      "feature": "Type of Travel_Personal Travel",
+      "importance": 0.012306934147171609
+    },
+    {
+      "feature": "Class_Eco",
+      "importance": 0.012092805747608359
+    },
+    {
+      "feature": "Arrival Delay in Minutes",
+      "importance": 0.011065114603678584
+    },
+    {
+      "feature": "Departure Delay in Minutes",
+      "importance": 0.009571043180840148
+    },
+    {
+      "feature": "Class_Eco Plus",
+      "importance": 0.0012971547742371009
+    }
+  ],
+  "task_type": "classification",
+  "feature_names_in": [
+    "Customer Type",
+    "Age",
+    "Type of Travel",
+    "Class",
+    "Flight Distance",
+    "Seat comfort",
+    "Departure/Arrival time convenient",
+    "Food and drink",
+    "Gate location",
+    "Inflight wifi service",
+    "Inflight entertainment",
+    "Online support",
+    "Ease of Online booking",
+    "On-board service",
+    "Leg room service",
+    "Baggage handling",
+    "Checkin service",
+    "Cleanliness",
+    "Online boarding",
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "numerical_columns": [
+    "Age",
+    "Flight Distance",
+    "Seat comfort",
+    "Departure/Arrival time convenient",
+    "Food and drink",
+    "Gate location",
+    "Inflight wifi service",
+    "Inflight entertainment",
+    "Online support",
+    "Ease of Online booking",
+    "On-board service",
+    "Leg room service",
+    "Baggage handling",
+    "Checkin service",
+    "Cleanliness",
+    "Online boarding",
+    "Departure Delay in Minutes",
+    "Arrival Delay in Minutes"
+  ],
+  "categorical_columns": [
+    "Customer Type",
+    "Type of Travel",
+    "Class"
+  ],
+  "column_metadata": {
+    "Customer Type": {
+      "type": "categorical",
+      "categories": [
+        "Loyal Customer",
+        "disloyal Customer"
+      ],
+      "default": "Loyal Customer"
+    },
+    "Age": {
+      "type": "numerical",
+      "min": 7.0,
+      "max": 85.0,
+      "mean": 39.42795657530028,
+      "median": 40.0,
+      "is_integer": false
+    },
+    "Type of Travel": {
+      "type": "categorical",
+      "categories": [
+        "Business travel",
+        "Personal Travel"
+      ],
+      "default": "Business travel"
+    },
+    "Class": {
+      "type": "categorical",
+      "categories": [
+        "Business",
+        "Eco",
+        "Eco Plus"
+      ],
+      "default": "Business"
+    },
+    "Flight Distance": {
+      "type": "numerical",
+      "min": 50.0,
+      "max": 6951.0,
+      "mean": 1981.409054511857,
+      "median": 1925.0,
+      "is_integer": false
+    },
+    "Seat comfort": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 2.838597166615337,
+      "median": 3.0,
+      "is_integer": true
+    },
+    "Departure/Arrival time convenient": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 2.990645210963967,
+      "median": 3.0,
+      "is_integer": true
+    },
+    "Food and drink": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 2.851994148444718,
+      "median": 3.0,
+      "is_integer": true
+    },
+    "Gate location": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 2.990421927933477,
+      "median": 3.0,
+      "is_integer": true
+    },
+    "Inflight wifi service": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.2491299661225748,
+      "median": 3.0,
+      "is_integer": true
+    },
+    "Inflight entertainment": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.3834770557437635,
+      "median": 4.0,
+      "is_integer": true
+    },
+    "Online support": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.519702802587003,
+      "median": 4.0,
+      "is_integer": true
+    },
+    "Ease of Online booking": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.4721050200184784,
+      "median": 4.0,
+      "is_integer": true
+    },
+    "On-board service": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.465075454265476,
+      "median": 4.0,
+      "is_integer": true
+    },
+    "Leg room service": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.485902371419772,
+      "median": 4.0,
+      "is_integer": true
+    },
+    "Baggage handling": {
+      "type": "numerical",
+      "min": 1.0,
+      "max": 5.0,
+      "mean": 3.695672928857407,
+      "median": 4.0,
+      "is_integer": true
+    },
+    "Checkin service": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.3408068986757007,
+      "median": 3.0,
+      "is_integer": true
+    },
+    "Cleanliness": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.7057591623036648,
+      "median": 4.0,
+      "is_integer": true
+    },
+    "Online boarding": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 3.3525870033877427,
+      "median": 4.0,
+      "is_integer": true
+    },
+    "Departure Delay in Minutes": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 1592.0,
+      "mean": 14.713712657838004,
+      "median": 0.0,
+      "is_integer": false
+    },
+    "Arrival Delay in Minutes": {
+      "type": "numerical",
+      "min": 0.0,
+      "max": 1584.0,
+      "mean": 15.09112883918849,
+      "median": 0.0,
+      "is_integer": false
+    }
+  },
+  "class_mapping": {
+    "dissatisfied": 0,
+    "satisfied": 1
+  },
+  "model_params": {
+    "algorithm": "Random Forest Classifier",
+    "n_estimators": 100,
+    "max_depth": 18,
+    "random_state": 42
+  }
+}
